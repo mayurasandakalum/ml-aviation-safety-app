@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Aviation Safety Check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="colorlib.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="static/fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.css" />
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link
+      rel="stylesheet"
+      href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.css"
+    />
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="static/css/style.css" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <div style="display: flex; flex-direction: row; column-gap: 10px;">
+            <img src="../static/images/logo.png" style="height: 100px;" />
+            <div style="display: flex; flex-direction: column; justify-content: end; align-items: start;">
+              <p class="navbar-brand" style="margin: 0; padding: 0; font-size: 25px;">Bluechip</p>
+              <p class="navbar-brand" style="margin: 0; padding: 0; font-size: 25px;" >Technologies Asia</p>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarsExample05"
+            aria-controls="navbarsExample05"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <!-- <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recipes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item" href="#">Food Catering</a>
+                  <a class="dropdown-item" href="#">Drink &amp; Beverages</a>
+                  <a class="dropdown-item" href="#">Wedding &amp; Birthday</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+            </ul> -->
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item cta-btn">
+                <a class="nav-link" target="_blank" href="https://bluechiptech.asia/">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+    <div class="wrapper">
+      <form action="" id="wizard">
+        <!-- SECTION 1 -->
+        <h2></h2>
+        <section>
+          <div class="inner">
+            <div class="image-holder">
+              <img src="static/images/flight3.jpg" alt="" />
+            </div>
+            <div class="form-content" style="position: relative">
+              <div class="form-header">
+                <h3>Aircraft Details</h3>
+              </div>
+              <div class="form-row">
+                <div class="select">
+                  <div class="form-holder">
+                    <div class="select-control">Make</div>
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </div>
+                  <ul class="dropdown" id="make-dropdown">
+                    <!-- <li rel="United States">United States</li> -->
+                  </ul>
+                </div>
+                <div class="select">
+                  <div class="form-holder">
+                    <div class="select-control">Model</div>
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </div>
+                  <ul class="dropdown" id="model-dropdown">
+                    <!-- <li rel="United States">United States</li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-holder">
+                  <input
+                    type="number"
+                    placeholder="Number of Engines"
+                    class="form-control"
+                    id="no-of-engines-input"
+                  />
+                </div>
+                <div class="select">
+                  <div class="form-holder">
+                    <div class="select-control">Engine Type</div>
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </div>
+                  <ul class="dropdown" id="engine-type-dropdown">
+                    <!-- <li rel="United States">United States</li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="select">
+                  <div class="form-holder">
+                    <div class="select-control">Aircraft Damage</div>
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </div>
+                  <ul class="dropdown" id="aircraft-damage-dropdown">
+                    <!-- <li rel="United States">United States</li> -->
+                  </ul>
+                </div>
+                <div class="select">
+                  <div class="form-holder">
+                    <div class="select-control">Amateur Built</div>
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </div>
+                  <ul class="dropdown" id="amateur-built-dropdown">
+                    <!-- <li rel="Yes">Yes</li>
+                    <li rel="No">No</li> -->
+                  </ul>
+                </div>
+              </div>
+              <div style="position: absolute; bottom: 50px; right: 50px">
+                <button
+                  type="button"
+                  class="button-6"
+                  role="button"
+                  id="section-1-next"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2 -->
+        <h2></h2>
+        <section>
+          <div class="inner">
+            <div class="image-holder">
+              <img src="static/images/flight1.jpg" alt="" />
+            </div>
+            <div class="form-content" style="position: relative">
+              <div class="form-header">
+                <h3>Incident Details</h3>
+              </div>
+              <div class="form-row">
+                <div class="select">
+                  <div class="form-holder">
+                    <div class="select-control">Location</div>
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </div>
+                  <ul class="dropdown" id="location-dropdown">
+                    <!-- <li rel="United States">United States</li> -->
+                  </ul>
+                </div>
+                <div class="select">
+                  <div class="form-holder">
+                    <div class="select-control">Weather Condition</div>
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </div>
+                  <ul class="dropdown" id="weather-dropdown">
+                    <!-- <li rel="United States">United States</li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-holder">
+                  <input
+                    id="year-input"
+                    type="number"
+                    placeholder="Year"
+                    min="1999"
+                    max="2024"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-holder">
+                  <input
+                    id="month-input"
+                    type="number"
+                    placeholder="Month"
+                    min="1"
+                    max="12"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-holder">
+                  <input
+                    id="day-input"
+                    type="number"
+                    placeholder="Day"
+                    min="1"
+                    max="30"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-holder"></div>
+              </div>
+              <div class="form-row">
+                <div class="select">
+                  <div class="form-holder">
+                    <div class="select-control">Phase of Flight</div>
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </div>
+                  <ul class="dropdown" id="flight-pase-dropdown">
+                    <!-- <li rel="United States">United States</li> -->
+                  </ul>
+                </div>
+                <div class="form-holder">
+                  <input
+                    id="injuries-input"
+                    type="number"
+                    placeholder="Injuries"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-holder">
+                  <input
+                    id="pax-onboard-input"
+                    type="number"
+                    placeholder="Pax Onboard"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-holder">
+                  <input
+                    id="fatality-input"
+                    type="number"
+                    placeholder="Fatality (%)"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-holder">
+                  <input
+                    id="survived-input"
+                    type="number"
+                    placeholder="Survived"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div style="position: absolute; bottom: 50px; right: 50px">
+                <button
+                  class="button-6"
+                  role="button"
+                  style="background: #6d7f52; color: #fff"
+                  id="section-2-back"
+                >
+                  Back
+                </button>
+                <button
+                  type="button"
+                  class="button-6"
+                  role="button"
+                  id="section-2-predict"
+                >
+                  Predict
+                </button>
+              </div>
+              <!-- <button type="submit" id="submit-button">Submit</button> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3 -->
+        <h2></h2>
+        <section>
+          <div class="inner">
+            <div class="image-holder">
+              <img src="static/images/flight1.jpg" style="width: 100%;" alt="" />
+            </div>
+            <div class="form-content">
+              <div class="form-header">
+                <h3>Prediction</h3>
+              </div>
+              <!-- <p>Send an optional message</p> -->
+              <div class="form-row" style="margin-top: 20px;">
+                <p>Your prediction:</p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <p1 style="color: chocolate; font-size: 60px; font-weight: bold;" id="prediction"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </form>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <!-- JQUERY STEP -->
+    <script src="static/js/jquery.steps.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
